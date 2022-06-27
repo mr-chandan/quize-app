@@ -26,7 +26,7 @@ app.get("/", function (req, res) {
     res.render("signup");
 
 });
-
+//home page 
 app.post("/", function (req, res) {
 
     user = req.body.name
@@ -52,12 +52,12 @@ app.post("/start", function (req, res) {
       
     })
 });
-
+//port name 
 let port = process.env.PORT;
 if (port == null || port == "") {
   port = 3000;
 }
-
+//listen to server
 app.listen(port, function () {
     console.log("server is live")
 });
